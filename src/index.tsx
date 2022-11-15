@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 import '@veupathdb/wdk-client/lib/Core/Style/index.scss';
 import '@veupathdb/web-common/lib/styles/client.scss';
+import { CompareTrees } from './lib/CompareTrees';
 
 initialize({
   rootUrl,
@@ -17,7 +18,7 @@ initialize({
   wrapRoutes: (routes: any): RouteEntry[] => [
     {
       path: '/',
-      component: (props: RouteComponentProps<void>) => <Home />,
+      component: (props: RouteComponentProps<void>) => <CompareTrees />,
     },
     ...routes,
   ],
